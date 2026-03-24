@@ -5,7 +5,6 @@ from frappe.model.document import Document
 class Assignment(Document):
 
     def validate(self):
-        # 🔒 Check enrollment
         if not frappe.db.exists("Enrollments", {
             "student": self.student,
             "course": self.course,
@@ -14,7 +13,6 @@ class Assignment(Document):
             frappe.throw("Student not enrolled")
 
 
-# ✅ Student filter (already correct)
 @frappe.whitelist()
 def get_students(doctype, txt, searchfield, start, page_len, filters):
     return frappe.db.sql("""
@@ -23,7 +21,6 @@ def get_students(doctype, txt, searchfield, start, page_len, filters):
     """, (filters.get("course"), filters.get("semester")))
 
 
-# 🔥 ADD THIS (MAIN REQUIREMENT)
 @frappe.whitelist()
 def get_assignment_details(student):
 

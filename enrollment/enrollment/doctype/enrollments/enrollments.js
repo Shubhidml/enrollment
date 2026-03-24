@@ -1,7 +1,6 @@
 frappe.ui.form.on("Enrollments", {
 
     onload(frm) {
-        // 🔥 Course filter (IMPORTANT)
         frm.set_query("course", function() {
             return {
                 filters: {
