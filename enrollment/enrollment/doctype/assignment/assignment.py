@@ -33,6 +33,6 @@ def get_assignment_details(student):
     )
 
     if assignment:
-        return assignment[0]   # dict return
+        return assignment[0]   
     else:
         return {}
