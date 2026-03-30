@@ -13,7 +13,8 @@
   "total_fees",
   "course_credit",
   "party",
-  "party_type"
+  "party_type",
+  "status"
  ],
  "fields": [
   {
@@ -64,14 +65,20 @@
    "fieldtype": "Link",
    "label": "Party Type",
    "options": "DocType"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-17 00:53:03.947208",
- "modified_by": "Administrator",
- "module": "enrollment",
+ "modified": "2026-03-30 00:15:01.781213",
+ "modified_by": "shubh@gmail.com",
+ "module": "Enrollment",
  "name": "Enrollments",
  "owner": "Administrator",
  "permissions": [
