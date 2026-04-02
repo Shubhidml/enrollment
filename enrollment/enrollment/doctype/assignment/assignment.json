@@ -8,7 +8,9 @@
   "course",
   "semester",
   "student",
-  "assignment_details"
+  "assignment_details",
+  "status",
+  "grade"
  ],
  "fields": [
   {
@@ -33,14 +35,27 @@
    "fieldname": "assignment_details",
    "fieldtype": "Text",
    "label": "Assignment Details"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nCompleted\nGraded"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Select",
+   "label": "Grade",
+   "options": "A\nB\nC\nD\nF"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-23 16:48:00.124232",
- "modified_by": "Administrator",
- "module": "enrollment",
+ "modified": "2026-03-31 08:30:45.789701",
+ "modified_by": "shubh@gmail.com",
+ "module": "Enrollment",
  "name": "Assignment",
  "owner": "Administrator",
  "permissions": [

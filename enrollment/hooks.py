@@ -247,3 +247,9 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+scheduler_events = {
+    "daily_long": [
+        "enrollment.enrollment.scheduled_tasks.update_attendance_count",
+        "enrollment.enrollment.scheduled_tasks.process_assignment_grading"
+    ]
+}

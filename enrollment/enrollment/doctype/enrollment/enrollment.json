@@ -1,10 +1,12 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2026-03-17 00:48:20.489386",
+ "creation": "2026-04-02 09:26:11.313992",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "section_break_ucfb",
+  "amended_from",
   "course",
   "student",
   "semester",
@@ -12,15 +14,34 @@
   "course_fee",
   "registration_fees",
   "total_fees",
-  "course_credit",
-  "amended_from"
+  "course_credit"
  ],
  "fields": [
+  {
+   "fieldname": "section_break_ucfb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Enrollment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
   {
    "fieldname": "course",
    "fieldtype": "Link",
    "label": "Course",
    "options": "Courses"
+  },
+  {
+   "fieldname": "student",
+   "fieldtype": "Link",
+   "label": "Student",
+   "options": "Students"
   },
   {
    "fetch_from": "student.semester",
@@ -46,41 +67,24 @@
   {
    "fieldname": "total_fees",
    "fieldtype": "Currency",
-   "label": "Total fees",
-   "read_only": 1
+   "label": "Total fees"
   },
   {
    "fetch_from": "course.credits",
    "fieldname": "course_credit",
    "fieldtype": "Int",
    "label": "Course Credit"
-  },
-  {
-   "fieldname": "student",
-   "fieldtype": "Link",
-   "label": "Student",
-   "options": "Students"
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Enrollments",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-03-31 09:24:36.472868",
- "modified_by": "shubh@gmail.com",
+ "modified": "2026-04-02 09:41:19.256335",
+ "modified_by": "Administrator",
  "module": "Enrollment",
- "name": "Enrollments",
- "owner": "Administrator",
+ "name": "Enrollment",
+ "owner": "shubh@gmail.com",
  "permissions": [
   {
    "create": 1,

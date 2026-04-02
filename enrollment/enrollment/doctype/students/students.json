@@ -7,7 +7,9 @@
  "field_order": [
   "name1",
   "email",
-  "semester"
+  "semester",
+  "attendance_count",
+  "grade"
  ],
  "fields": [
   {
@@ -24,14 +26,27 @@
    "fieldname": "semester",
    "fieldtype": "Int",
    "label": "Semester"
+  },
+  {
+   "default": "0",
+   "fieldname": "attendance_count",
+   "fieldtype": "Int",
+   "label": "Attendance Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Select",
+   "label": "Grade",
+   "options": "A\nB\nC\nD\nF"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-17 00:45:37.593848",
- "modified_by": "Administrator",
- "module": "enrollment",
+ "modified": "2026-03-31 08:38:23.875680",
+ "modified_by": "shubh@gmail.com",
+ "module": "Enrollment",
  "name": "Students",
  "owner": "Administrator",
  "permissions": [

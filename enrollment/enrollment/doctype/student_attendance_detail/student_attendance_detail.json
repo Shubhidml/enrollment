@@ -1,0 +1,23 @@
+{
+  "name": "Student Attendance Detail",
+  "doctype": "DocType",
+  "module": "Enrollment",
+  "istable": 1,
+  "fields": [
+    {
+      "fieldname": "student",
+      "fieldtype": "Link",
+      "label": "Student",
+      "options": "Students",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "is_present",
+      "fieldtype": "Check",
+      "label": "Present",
+      "in_list_view": 1,
+      "default": 1
+    }
+  ]
+}

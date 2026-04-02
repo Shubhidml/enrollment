@@ -1,0 +1,57 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"DUJUt9znvd\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Student Management Dashboard</span>\",\"col\":12}},{\"id\":\"WX5V4gfpBr\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Enrollments\",\"col\":3}},{\"id\":\"CGuAB_nuVR\",\"type\":\"card\",\"data\":{\"card_name\":\"enrollment card\",\"col\":4}}]",
+ "creation": "2026-03-30 09:59:30.090854",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Student Management Dashboard",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "enrollment card",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "enrollment",
+   "link_count": 0,
+   "link_to": "Enrollments",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-03-30 10:13:12.839763",
+ "modified_by": "shubh@gmail.com",
+ "module": "Enrollment",
+ "name": "Student Management Dashboard",
+ "number_cards": [],
+ "owner": "shubh@gmail.com",
+ "parent_page": "Build",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 28.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Enrollments",
+   "link_to": "Enrollments",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Student Management Dashboard"
+}
